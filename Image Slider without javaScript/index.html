@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Image Slider without JavaScript</title>
+ <style type="text/css">
+  #slider{
+   overflow: hidden;
+  }
+  #slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0 ;
+  animation: 20s slider infinite;
+  }
+   #slider figure img{
+    float: left;
+    width: 20%;
+   /*img size change EX. height: 500px;  */
+
+   }
+   @keyframes slider{
+    0%{
+     left: 0;
+    }
+    20%{
+     left: 0;
+    }
+    25%{
+     left: -100%;
+    }
+    50%{
+     left: -100%;
+    }
+    55%{
+     left: -200%;
+    }
+    80%{
+     left: -200%;
+    }
+    85%{
+     left: -300%;
+    }
+     100%{
+     left: -300%;
+    }
+    
+   }
+
+ </style>
+</head>
+<body>
+  <div>
+   <div id="slider">
+   <figure>
+       <img src="image/plant.png">
+        <img src="image/plant2.png">
+         <img src="image/plant3.png">
+          <img src="image/plant4.png">
+   </figure>
+   </div>
+  </div>
+</body>
+</html>
